@@ -83,8 +83,8 @@ def replace(old_node, new_node):
             old_node.parent.left = new_node
         else:
             old_node.parent.right = new_node
-        if new_node:
-            new_node.parent = old_node.parent
+    if new_node:
+        new_node.parent = old_node.parent
 
 
 def delete(node):

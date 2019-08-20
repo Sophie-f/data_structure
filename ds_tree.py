@@ -78,7 +78,7 @@ def lca(current_root, x, y):  # finding lowest common ancestor
       
 
 def replace(old_node, new_node):
-    if old_node.parent:
+    if old_node.parent: #oldNode is not root
         if old_node.parent.left == old_node:
             old_node.parent.left = new_node
         else:

@@ -49,13 +49,17 @@ class DoubleLinkList:
         return self.n == 0   
 
 
-#  my_list = DoubleLinkList() # head
-# print(my_list.size())
-# my_list.insert_after(my_list.head,"Fresht") # head <-> Fresht
-# print(my_list.size())
-# my_list.insert_after(my_list.get(0),"Mortz") # head <-> Fresht <-> Mortz
-# print(my_list.size())
-# my_list.insert_after(my_list.find("Mortz").prev,"Fati") # head <-> Fresht <-> Fati <-> Mortz 
-# print(my_list.size())
-# my_list.delete(my_list.find("Fati")) # head <-> Feresht <-> Mortz
-# print(my_list.size())
+my_list = DoubleLinkList() # head
+print(my_list.size())
+my_list.insert_after(my_list.head,"Fresht") # head <-> Fresht
+print(my_list.size())
+my_list.insert_after(my_list.get(0),"Mortz") # head <-> Fresht <-> Mortz
+print(my_list.size())
+my_list.insert_after(my_list.find("Mortz").prev,"Fati") # head <-> Fresht <-> Fati <-> Mortz 
+print(my_list.get(0).data)
+print(my_list.get(1).data)
+print(my_list.get(2).data)
+
+print(my_list.size())
+my_list.delete(my_list.find("Fati")) # head <-> Feresht <-> Mortz
+print(my_list.size())
